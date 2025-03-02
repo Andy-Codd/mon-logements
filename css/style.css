@@ -20,7 +20,7 @@
 }
 
 body{
-    font-family: var(--font-primary), "Poppins", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', var(--font-primary), "Poppins", 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: var(--color-secondary);
 }
 
