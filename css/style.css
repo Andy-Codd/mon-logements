@@ -239,6 +239,9 @@ input{
     #other{
         grid-column: span 1;
     }
+    #page2 #button-start{
+        margin-bottom: 50px;
+    }
 }
 
 
