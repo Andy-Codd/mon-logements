@@ -50,9 +50,9 @@ document.addEventListener("DOMContentLoaded", function () {
 // Gestion dynamique de la localisation
 // Données des quartiers par ville
 const quartiers = {
-    "Douala": ["Akwa", "Bonapriso", "Bassa", "Makepe", "New Bell", "autre"],
-    "Yaounde": ["Elig-Essono", "Melen", "Biyem-Assi", "Nkolbisson", "Simbock", "autre"],
-    "Bafoussam": ["Maéture", "TchiTchap II", "Entré de la ville", "Ancien depot Guiness", "Tougang Village", "Quartier Aoussa" ,"Centre-ville", "Djeleng", "Bamendjou", "Bafou", "Bamougoum", "autre"]
+    "Douala": ["Akwa", "Bonapriso", "Bassa", "Makepe", "New Bell", "Autre..."],
+    "Yaounde": ["Elig-Essono", "Melen", "Biyem-Assi", "Nkolbisson", "Simbock", "Autre..."],
+    "Bafoussam": ["Maéture", "TchiTchap II", "Entré de la ville", "Ancien depot Guiness", "Tougang Village", "Quartier Aoussa" ,"Centre-ville", "Djeleng", "Bamendjou", "Bafou", "Bamougoum", "Autre..."]
 };
 
 // Fonction pour mettre à jour la liste des quartiers

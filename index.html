@@ -115,7 +115,6 @@
                         <br>
                         <select name="quartier" id="quartier-logement">
                             <option value="">---</option>
-                            <option value="autre">Autre quartier...</option>
                         </select>
                     </div>
 
@@ -124,7 +123,7 @@
                     <script>
                         document.getElementById('quartier-logement').addEventListener('change', function() {
                             var autreInput = document.getElementById('quartier-logement-autre');
-                            if (this.value === 'autre') {
+                            if (this.value === 'Autre...') {
                                 autreInput.style.display = 'block';
                             } else {
                                 autreInput.style.display = 'none';
