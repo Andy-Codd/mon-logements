@@ -245,7 +245,7 @@ input, select{
     font-family: var(--font-primary);
 }
 select{
-    height: 30px;
+    height: 45px;
 }
 
 input[type='radio']{
