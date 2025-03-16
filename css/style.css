@@ -244,6 +244,9 @@ input, select{
     border-top: 2px solid #00acc1;
     font-family: var(--font-primary);
 }
+select{
+    height: 30px;
+}
 
 input[type='radio']{
     padding: 0px;
