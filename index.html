@@ -23,6 +23,7 @@
 
         <!--Page 2-->
         <div id="page2">
+
             <div id="header">
                 <div id="pevious-page"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 12 12"><path fill="currentColor" d="M10.5 6a.75.75 0 0 0-.75-.75H3.81l1.97-1.97a.75.75 0 0 0-1.06-1.06L1.47 5.47a.75.75 0 0 0 0 1.06l3.25 3.25a.75.75 0 0 0 1.06-1.06L3.81 6.75h5.94A.75.75 0 0 0 10.5 6"/></svg></div>
                 <div id="logo">
@@ -30,135 +31,192 @@
                 </div>
                 <div></div>
             </div>
-            <div id="titre">Type de logement</div>
-            <div id="sous-titre">Quel type de logements recherchez-vous ? </div>
-            <div id="input-type-logement">
-                <div><input type="checkbox" name="type-logement" id="type-logement1" value="Maison"><label for="type-logement1">Maison</label></div>  
-                <div><input type="checkbox" name="type-logement" id="type-logement11" value="Maison-moderne"><label for="type-logement11">Maison moderne</label></div>  
-                <div><input type="checkbox" name="type-logement" id="type-logement12" value="Maison-meublee"><label for="type-logement12">Maison meublée</label></div>  
-                <div><input type="checkbox" name="type-logement" id="type-logement2" value="Chambre"><label for="type-logement2">Chambre</label></div>
-                <div><input type="checkbox" name="type-logement" id="type-logement21" value="Chambre-moderne"><label for="type-logement21">Chambre moderne</label></div>
-                <div><input type="checkbox" name="type-logement" id="type-logement22" value="Chambre-meublee"><label for="type-logement22">Chambre meublée</label></div>
-                <div><input type="checkbox" name="type-logement" id="type-logement23" value="Chambre-etudiant"><label for="type-logement23">Chambre étudiant</label></div>
-                <div><input type="checkbox" name="type-logement" id="type-logement3" value="Appartement"><label for="type-logement3">Appartement</label></div>
-                <div><input type="checkbox" name="type-logement" id="type-logement31" value="Appartement-moderne"><label for="type-logement31">Appartement moderne</label></div>
-                <div><input type="checkbox" name="type-logement" id="type-logement32" value="Appartement-meublee"><label for="type-logement32">Appartement meublée</label></div>
-                <div><input type="checkbox" name="type-logement" id="type-logement4" value="Studio"><label for="type-logement4">Appartement</label></div>
-                <div><input type="checkbox" name="type-logement" id="type-logement41" value="Studio-moderne"><label for="type-logement41">Studio moderne</label></div>
-                <div><input type="checkbox" name="type-logement" id="type-logement42" value="Studio-meublee"><label for="type-logement42">Studio meublée</label></div>
-                <div><input type="checkbox" name="type-logement" id="type-logement5" value="Terrain"><label for="type-logement5">Terrain</label></div>
-                <div><input type="checkbox" name="type-logement" id="type-logement51" value="Terrain"><label for="type-logement51">Terrain Agricole</label></div>
-                <div><input type="checkbox" name="type-logement" id="type-logement52" value="Terrain"><label for="type-logement52">Terrain Constructible</label></div>
-                <div><input type="checkbox" name="type-logement" id="type-logement53" value="Terrain"><label for="type-logement53">Terrain Commercial</label></div>
-                <div><input type="checkbox" name="type-logement" id="type-logement6" value="Boutique"><label for="type-logement6">Boutique</label></div>
-                <div id="other"><input type="text" name="type-logement" id="type-logement-autre" placeholder="Autre..."></div>
-            </div>
-            <div id="button-start" class="disabled"><span>Suivant</span><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="currentColor" fill-rule="evenodd" d="M2 8a.75.75 0 0 1 .75-.75h8.69L8.22 4.03a.75.75 0 0 1 1.06-1.06l4.5 4.5a.75.75 0 0 1 0 1.06l-4.5 4.5a.75.75 0 0 1-1.06-1.06l3.22-3.22H2.75A.75.75 0 0 1 2 8" clip-rule="evenodd"/></svg></span></div>
-        </div>
 
+            <div id="main-form">
 
-        <!--Page 3-->
-        <div id="page3">
-            <div id="header">
-                <div id="pevious-page"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 12 12"><path fill="currentColor" d="M10.5 6a.75.75 0 0 0-.75-.75H3.81l1.97-1.97a.75.75 0 0 0-1.06-1.06L1.47 5.47a.75.75 0 0 0 0 1.06l3.25 3.25a.75.75 0 0 0 1.06-1.06L3.81 6.75h5.94A.75.75 0 0 0 10.5 6"/></svg></div>
-                <div id="logo">
-                    <img src="images/logo.png" alt="logo-mon-logements.com">
-                </div>
-                <div></div>
-            </div>
-            <div id="titre">Localisation du logement</div>
-            <div id="sous-titre">Où recherchez-vous un logement ?</div>
-            <div>
-                <label for="ville-logement">Ville</label><br>
-                <select name="ville" id="ville-logement">
-                    <option value="Bafoussam">Bafoussam</option>
-                    <option value="Douala">Douala</option>
-                    <option value="Youndé">Yaoundé</option>
+                <div id="titre">Formulaire</div>
+
+                <hr>
+
+                <label for="type-logement">Type de logement</label>
+                <br>
+                <select name="type-logement" id="type-logement">
+                    <option value="Maison">Maison</option>
+                    <option value="Maison-moderne">Maison moderne</option>
+                    <option value="Maison-meublee">Maison meublée</option>
+                    <option value="Chambre">Chambre</option>
+                    <option value="Chambre-moderne">Chambre moderne</option>
+                    <option value="Chambre-meublee">Chambre meublée</option>
+                    <option value="Chambre-etudiant">Chambre étudiant</option>
+                    <option value="Appartement">Appartement</option>
+                    <option value="Appartement-moderne">Appartement moderne</option>
+                    <option value="Appartement-meublee">Appartement meublé</option>
+                    <option value="Studio">Studio</option>
+                    <option value="Studio-moderne">Studio moderne</option>
+                    <option value="Studio-meublee">Studio meublé</option>
+                    <option value="Terrain">Terrain</option>
+                    <option value="Terrain-Agricole">Terrain Agricole</option>
+                    <option value="Terrain-Constructible">Terrain Constructible</option>
+                    <option value="Terrain-Commercial">Terrain Commercial</option>
+                    <option value="Boutique">Boutique</option>
+                    <option value="autre">Autre...</option>
                 </select>
-            </div>  
-            <div>
-                <label for="quartier-logement">Quartier</label><br>
-                <select name="quartier" id="quartier-logement">
-                    <option value="">---</option>
-                </select>
-            </div>
-            <div id="other"><input type="text" name="quartier-logement" id="quartier-logement-autre" placeholder="Autre..."></div>
-            <div id="button-start" class="disabled"><span>Suivant</span><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="currentColor" fill-rule="evenodd" d="M2 8a.75.75 0 0 1 .75-.75h8.69L8.22 4.03a.75.75 0 0 1 1.06-1.06l4.5 4.5a.75.75 0 0 1 0 1.06l-4.5 4.5a.75.75 0 0 1-1.06-1.06l3.22-3.22H2.75A.75.75 0 0 1 2 8" clip-rule="evenodd"/></svg></span></div>
-        </div>
+                
+                <input type="text" name="type-logement-autre" id="type-logement-autre" placeholder="Précisez..." style="display:none;">
+                
+                <script>
+                    document.getElementById('type-logement').addEventListener('change', function() {
+                        var autreInput = document.getElementById('type-logement-autre');
+                        if (this.value === 'autre') {
+                            autreInput.style.display = 'block';
+                        } else {
+                            autreInput.style.display = 'none';
+                        }
+                    });
+                </script>
+                
 
+                <hr>
 
-        <!--Page 4-->
-        <div id="page4">
-            <div id="header">
-                <div id="pevious-page"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 12 12"><path fill="currentColor" d="M10.5 6a.75.75 0 0 0-.75-.75H3.81l1.97-1.97a.75.75 0 0 0-1.06-1.06L1.47 5.47a.75.75 0 0 0 0 1.06l3.25 3.25a.75.75 0 0 0 1.06-1.06L3.81 6.75h5.94A.75.75 0 0 0 10.5 6"/></svg></div>
-                <div id="logo">
-                    <img src="images/logo.png" alt="logo-mon-logements.com">
-                </div>
-                <div></div>
-            </div>
-            <div id="titre">Votre budget pour le logement</div>
-            <div id="sous-titre">Quel est l'intervalle de prix de votre budget pour un le logement ?</div>
-            <div id="select-price">
+                <!--Page 3-->
                 <div>
-                    <label for="prix-min">min:</label><br>
-                    <input type="number" name="prix-min" id="prix-min" placeholder="min">
+                    <div>
+                        <label for="ville-logement">Ville</label>
+                        <br>
+                        <select name="ville" id="ville-logement">
+                            <option value="Bafoussam">Bafoussam</option>
+                            <option value="Douala">Douala</option>
+                            <option value="Yaounde">Yaoundé</option>
+                            <option value="autre">Autre...</option>
+                        </select>
+                    </div>  
+
+                    <input type="text" name="ville" id="ville-logement-autre" placeholder="Autre ville..." style="display:none;">
+
+                    <script>
+                        document.getElementById('ville-logement').addEventListener('change', function() {
+                            var autreInput = document.getElementById('ville-logement-autre');
+                            var autreInputQuartier = document.getElementById('quartier-logement-autre');
+                            var inputQuartier = document.getElementById('inputQuartier');
+                            if (this.value === 'autre') {
+                                autreInput.style.display = 'block';
+                                autreInputQuartier.style.display = 'block'
+                                inputQuartier.style.display = 'none'
+                            } else {
+                                autreInput.style.display = 'none';
+                                autreInputQuartier.style.display = 'none'
+                                inputQuartier.style.display = 'block'
+                            }
+                        });
+                    </script>
+
+                    <div id="inputQuartier">
+                        <label for="quartier-logement">Quartier</label>
+                        <br>
+                        <select name="quartier" id="quartier-logement">
+                            <option value="">---</option>
+                            <option value="autre">Autre quartier...</option>
+                        </select>
+                    </div>
+
+                    <div><input type="text" name="quartier-logement" id="quartier-logement-autre" placeholder="Quatier dans cette ville..." style="display: none;"></div>
+
+                    <script>
+                        document.getElementById('quartier-logement').addEventListener('change', function() {
+                            var autreInput = document.getElementById('quartier-logement-autre');
+                            if (this.value === 'autre') {
+                                autreInput.style.display = 'block';
+                            } else {
+                                autreInput.style.display = 'none';
+                            }
+                        });
+                    </script>
+
                 </div>
 
+
+                <hr>
+
+                <!--Page 4-->
                 <div>
-                    <label for="prix-max">max:</label><br>
-                    <input type="number" name="prix-max" id="prix-max" placeholder="max">
+                    <div id="select-price">
+                        <label for="prix">Prix</label>
+                        <div id="select-price-pseudo">
+                            <input type="number" name="prix-min" id="prix-min" placeholder="min">
+                            <input type="number" name="prix-max" id="prix-max" placeholder="max">
+                        </div>
+                    </div>
+
                 </div>
+
+                <hr>
+
+                <!-- Page 5 -->
+                <div>
+                    <div>
+                        <label for="nom-premon">Nom et Prénom</label><br>
+                        <input type="text" name="nom-premon" id="nom-premon" placeholder="Nom et Prénom...">
+                    </div>  
+                    <div>
+                        <label for="telephone">Telephone (WhatsApp)</label><br>
+                        <input type="text" name="telephone" id="telephone" placeholder="Telephone...">
+                    </div>
+
+                    <div>
+                        <label>Êtes-vous en location ?</label><br>
+                        <div id="oui-ou-non">
+                            <div><input type="radio" name="location" id="location-oui" value="oui"><label for="location-oui" class=".label">Oui</label></div>
+                            <div><input type="radio" name="location" id="location-non" value="non"><label for="location-non" class=".label">Non</label></div>
+                        </div>
+                    </div>
+                    
+                    <div id="ville-actuelle-section" style="display:none;">
+                        <label for="ville-actuelle">Ville Actuelle</label><br>
+                        <input type="text" name="ville-actuelle" id="ville-actuelle" placeholder="Votre ville actuelle...">
+                    </div>  
+                    <div id="quartier-actuel-section" style="display:none;">
+                        <label for="quartier-actuel">Quartier Actuel</label><br>
+                        <input type="text" name="quartier-actuel" id="quartier-actuel" placeholder="Votre quartier actuel...">
+                    </div>
+
+
+                    <hr>
+
+                    <div>
+                        <label>Souhaitez vous prendre randez-vous ?</label><br>
+                        <div id="rdv-">
+                            <div><input type="radio" name="rdv" id="rdv-oui" value="oui"><label for="rdv-oui" class=".label">Oui</label></div>
+                            <div><input type="radio" name="rdv" id="rdv-non" value="non"><label for="rdv-non" class=".label">Non</label></div>
+                        </div>
+                    </div>
+                    
+                    <div id="lieu-rdv-section" style="display:none;">
+                        <label for="lieu-rdv">Lieu du rendez-vous</label><br>
+                        <input type="text" name="lieu-rdv" id="lieu-rdv" placeholder="Lieu du rendez-vous...">
+                    </div>  
+                    <div id="time-rdv-section" style="display:none;">
+                        <div>
+                            <label for="quartier-actuel">Date</label><br>
+                            <input type="date" name="quartier-actuel" id="quartier-actuel" placeholder="Votre quartier actuel...">
+                        </div>
+                        <div>
+                            <label for="quartier-actuel">Heure</label><br>
+                            <input type="time" name="quartier-actuel" id="quartier-actuel" placeholder="Votre quartier actuel...">
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div id="button-start" class="disabled"><div id="loading-spinner"></div><span>Terminer</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 1024 1024"><path fill="currentColor" d="M280.768 753.728L691.456 167.04a32 32 0 1 1 52.416 36.672L314.24 817.472a32 32 0 0 1-45.44 7.296l-230.4-172.8a32 32 0 0 1 38.4-51.2zM736 448a32 32 0 1 1 0-64h192a32 32 0 1 1 0 64zM608 640a32 32 0 0 1 0-64h319.936a32 32 0 1 1 0 64zM480 832a32 32 0 1 1 0-64h447.936a32 32 0 1 1 0 64z"/></svg></span></div>
+                
+                    <div id="success-message">✅ Formulaire envoyé avec succès !</div>
+                    <div id="error-message">❌ Erreur lors de l'envoi du formulaire.</div>
+                    
+                </div>
+
             </div>
 
-            <div id="button-start" class="disabled"><span>Suivant</span><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="currentColor" fill-rule="evenodd" d="M2 8a.75.75 0 0 1 .75-.75h8.69L8.22 4.03a.75.75 0 0 1 1.06-1.06l4.5 4.5a.75.75 0 0 1 0 1.06l-4.5 4.5a.75.75 0 0 1-1.06-1.06l3.22-3.22H2.75A.75.75 0 0 1 2 8" clip-rule="evenodd"/></svg></span></div>
         </div>
-
-
-        <!-- Page 5 -->
-        <div id="page5">
-            <div id="header">
-                <div id="pevious-page"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 12 12"><path fill="currentColor" d="M10.5 6a.75.75 0 0 0-.75-.75H3.81l1.97-1.97a.75.75 0 0 0-1.06-1.06L1.47 5.47a.75.75 0 0 0 0 1.06l3.25 3.25a.75.75 0 0 0 1.06-1.06L3.81 6.75h5.94A.75.75 0 0 0 10.5 6"/></svg></div>
-                <div id="logo">
-                    <img src="images/logo.png" alt="logo-mon-logements.com">
-                </div>
-                <div></div>
-            </div>
-            <div id="titre">Vos informations</div>
-            <div id="sous-titre">Permettez-nous de vous recontacter</div>
-            <div>
-                <label for="nom-premon">Nom et Prénom</label><br>
-                <input type="text" name="nom-premon" id="nom-premon" placeholder="Nom et Prénom...">
-            </div>  
-            <div>
-                <label for="telephone">Telephone (WhatsApp)</label><br>
-                <input type="text" name="telephone" id="telephone" placeholder="Telephone...">
-            </div>
-
-            <div>
-                <label>Êtes-vous en location ?</label><br>
-                <div id="oui-ou-non">
-                    <input type="radio" name="location" id="location-oui" value="oui"><label for="location-oui">Oui</label>
-                    <input type="radio" name="location" id="location-non" value="non"><label for="location-non">Non</label>
-                </div>
-            </div>
-
-            <!-- Ces sections seront cachées initialement -->
-            <div id="ville-actuelle-section" style="display:none;">
-                <label for="ville-actuelle">Ville Actuelle</label><br>
-                <input type="text" name="ville-actuelle" id="ville-actuelle" placeholder="Votre ville actuelle...">
-            </div>  
-            <div id="quartier-actuel-section" style="display:none;">
-                <label for="quartier-actuel">Quartier Actuel</label><br>
-                <input type="text" name="quartier-actuel" id="quartier-actuel" placeholder="Votre quartier actuel...">
-            </div>
-
-            <div id="button-start" class="disabled"><div id="loading-spinner"></div><span>Terminer</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 1024 1024"><path fill="currentColor" d="M280.768 753.728L691.456 167.04a32 32 0 1 1 52.416 36.672L314.24 817.472a32 32 0 0 1-45.44 7.296l-230.4-172.8a32 32 0 0 1 38.4-51.2zM736 448a32 32 0 1 1 0-64h192a32 32 0 1 1 0 64zM608 640a32 32 0 0 1 0-64h319.936a32 32 0 1 1 0 64zM480 832a32 32 0 1 1 0-64h447.936a32 32 0 1 1 0 64z"/></svg></span></div>
-        
-            <div id="success-message">✅ Formulaire envoyé avec succès !</div>
-            <div id="error-message">❌ Erreur lors de l'envoi du formulaire.</div>
-            
-        </div>
-
 
     </div>
     

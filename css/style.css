@@ -25,12 +25,9 @@ body{
 }
 
 
-input{
-    font-family: var(--font-primary);
-}
 
 /* Mouvement des pages */
-#page1, #page2, #page3, #page4, #page5{
+#page1, #page2{
     transition: transform 0.4s ease-in-out, opacity 0.3s ease-in-out;
     position: absolute;
     width: 100%;
@@ -41,11 +38,7 @@ input{
 
 
 /* Page 1 */
-#page1, 
-#page2, 
-#page3,
-#page4,
-#page5{
+#page1, #page2{
     max-width: 100%;
     margin-top: 50px;
     display: flex;
@@ -53,7 +46,18 @@ input{
     align-items: center;
     flex-direction: column;
     gap: 50px;
-    text-align: center;
+    text-align: left;
+}
+#page1{ text-align: center; }
+
+#main-form{
+    width: 100%;
+    max-width: 700px;
+    background-color: #fffefe;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    padding-bottom: 100px;
 }
 
 #page1 #logo img{
@@ -61,24 +65,61 @@ input{
     max-width: 600px;
 }
 
+#select-price-pseudo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+
+#oui-ou-non, #rdv- {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 40%;
+    margin-bottom: 30px;
+}
+
+#oui-ou-non input, #rdv- input {
+    display: none;
+}
+
+#oui-ou-non label, #rdv- label{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 8px 15px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#oui-ou-non input:checked + label, #rdv- input:checked + label {
+    background-color: #3498db;
+    color: white;
+}
+
+
+
 #page1 #titre, 
-#page2 #titre, 
-#page3 #titre,
-#page4 #titre,
-#page5 #titre{
+#page2 #titre{
     color: var(--color-tertiary);
     font-weight: 900;
     font-size: 2.4em;
     text-transform: uppercase;
     letter-spacing: 2px;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+#page2 #titre{
+    margin: 30px;
 }
 
 #page1 #sous-titre, 
-#page2 #sous-titre, 
-#page3 #sous-titre,
-#page4 #sous-titre,
-#page5 #sous-titre{
+#page2 #sous-titre{
     color: var(--color-dark-black);
     font-weight: 700;
     font-size: 1.1em;
@@ -87,10 +128,7 @@ input{
 }
 
 #page1 #button-start, 
-#page2 #button-start, 
-#page3 #button-start,
-#page4 #button-start,
-#page5 #button-start{
+#page2 #button-start{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,50 +147,32 @@ input{
 }
 
 #page1 #button-start:hover, 
-#page2 #button-start:hover, 
-#page3 #button-start:hover,
-#page4 #button-start:hover,
-#page5 #button-start:hover{
+#page2 #button-start:hover{
     transform: translateY(-2px);
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 #page1 #button-start:active, 
-#page2 #button-start:active, 
-#page3 #button-start:active,
-#page4 #button-start:active,
-#page5 #button-start:active{
+#page2 #button-start:active{
     transform: translateY(1px) scale(0.98);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 @media screen and (max-width: 850px){
     #page1 #logo img, 
-    #page2 #logo img, 
-    #page3 #logo img,
-    #page4 #logo img,
-    #page5 #logo img{
+    #page2 #logo img{
         width: 80vw;
     }
     #page1 #titre, 
-    #page2 #titre, 
-    #page3 #titre,
-    #page4 #titre,
-    #page5 #titre{
+    #page2 #titre{
         font-size: 1.8em;
     }
     #page1 #sous-titre, 
-    #page2 #sous-titre, 
-    #page3 #sous-titre,
-    #page4 #sous-titre,
-    #page5 #sous-titre{
+    #page2 #sous-titre{
         font-size: .8em;
     }
     #page1 #button-start, 
-    #page2 #button-start, 
-    #page3 #button-start,
-    #page4 #button-start,
-    #page5 #button-start{
+    #page2 #button-start{
         font-size: 1em;
     }
 }
@@ -161,20 +181,21 @@ input{
 
 
 /* Page 2 */
-#page2 #header, #page3 #header, #page4 #header, #page5 #header{
+#page2 #header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 98vw;
     max-width: 1200px;
 }
-#page2 #header #previous-page, #page3 #header #previous-page, #page4 #header #previous-page, #page5 #header #previous-page{
+#page2 #header{
     cursor: pointer;
     padding: 10px;
     border-radius: 50%;
 }
-#page2 #header #logo img, #page3 #header #logo img, #page4 #header #logo img, #page5 #header #logo img{
-    width: 100px;
+#page2 #header #logo img{
+    width: 50vw;
+    max-width: 500px;
 }
 
 
@@ -212,13 +233,33 @@ input{
     color: white;
     border-color: #007c91;
 }
-#type-logement-autre {
+input, select{
     padding: 10px;
     border-radius: 8px;
     border: 1px solid #ccc;
     outline: none;
     width: 100%;
+    margin-bottom: 30px;
+    margin-top: 5px;
+    border-top: 2px solid #00acc1;
+    font-family: var(--font-primary);
 }
+
+input[type='radio']{
+    padding: 0px;
+    border-radius: none;
+    outline: none;
+    width: auto;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+hr{
+    width: 50%;
+    margin: 30px auto;
+    height: 2px;
+    border-radius: 50%;
+}
+
 #other{
     grid-column: span 3;
     margin-top: 20px;
@@ -246,93 +287,6 @@ input{
 
 
 
-
-
-
-
-/* Page 3 */
-
-#page3 label{
-    text-align: left;
-    display: block;
-    width: 80vw;
-    max-width: 300px;
-    margin-bottom: -20px;
-}
-#page3 #ville-logement, #page3 #quartier-logement, #page3 #quartier-logement-autre{
-    width: 80vw;
-    max-width: 300px;
-    padding: 10px;
-    height: 40px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    outline: none;
-}
-#page3 #other{
-    width: 80vw;
-    max-width: 300px;;
-}
-
-
-/* Page 4 */
-#page4 #select-price{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#page4 #select-price input{
-    width: 80vw;
-    max-width: 100px;
-    padding: 10px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    outline: none;
-    margin-right: 15px;
-}
-#page4 #select-price label{
-    text-align: left;
-    display: block;
-    width: 80vw;
-    max-width: 100px;
-    margin-bottom: -20px;
-}
-
-
-/* Page 5 */
-#page5 input:not([type="radio"]){
-    width: 80vw;
-    max-width: 300px;
-    padding: 10px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    outline: none;
-}
-#page5 label{
-    text-align: left;
-    display: block;
-    width: 80vw;
-    max-width: 300px;
-    margin-bottom: -20px;
-}
-
-#page5 #oui-ou-non{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    width: 80vw;
-    max-width: 300px;
-    padding: 10px;
-}
-#page5 #oui-ou-non input{
-    width: auto;
-    max-width: auto;
-    padding: 0;
-    margin-bottom: 0;
-}
-#page5 #oui-ou-non label{
-    margin-bottom: 0;
-}
 
 
 
